@@ -13,11 +13,11 @@ import java.util.HashMap;
  * @author wiiyaya
  * @date 2016/5/19
  */
-public class QiniuOssStrange implements OssHelper {
+public class QiniuOssStrategy implements OssHelper {
 
     private final QiniuOssTokenGenClient qiniuOssTokenGenHelper;
 
-    public QiniuOssStrange(QiniuOssTokenGenClient qiniuOssTokenGenHelper){
+    public QiniuOssStrategy(QiniuOssTokenGenClient qiniuOssTokenGenHelper){
         this.qiniuOssTokenGenHelper = qiniuOssTokenGenHelper;
     }
 
