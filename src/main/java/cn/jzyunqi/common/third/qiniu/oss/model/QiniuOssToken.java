@@ -1,4 +1,4 @@
-package cn.jzyunqi.common.third.qiniu.model;
+package cn.jzyunqi.common.third.qiniu.oss.model;
 
 import lombok.Getter;
 import lombok.Setter;

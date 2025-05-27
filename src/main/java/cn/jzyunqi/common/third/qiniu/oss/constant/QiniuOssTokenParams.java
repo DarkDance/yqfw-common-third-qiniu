@@ -1,4 +1,4 @@
-package cn.jzyunqi.common.third.qiniu.constant;
+package cn.jzyunqi.common.third.qiniu.oss.constant;
 
 /**
  * @author wiiyaya
