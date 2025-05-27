@@ -25,7 +25,7 @@ public class QiniuOssClient {
     private ObjectMapper objectMapper;
 
     public QiniuOssToken uploadToken(String accessKey, String uid, Map<String, Object> params) throws BusinessException {
-        QiniuOssAuth qiniuOssAuth = qiniuOssAuthRepository.choosAliOssAuth(accessKey);
+        QiniuOssAuth qiniuOssAuth = qiniuOssAuthRepository.choosQiniuOssAuth(accessKey);
         try {
             Map<String, Object> currPolicy = new HashMap<>(qiniuOssAuth.getPolicy());
             if (CollectionUtilPlus.Map.isNotEmpty(params)) {

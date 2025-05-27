@@ -17,27 +17,27 @@ public abstract class QiniuOssAuthRepository implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        List<QiniuOssAuth> aliOssAuthList = initAliOssAuthList();
+        List<QiniuOssAuth> aliOssAuthList = initQiniuOssAuthList();
         for (QiniuOssAuth qiniuOssAuth : aliOssAuthList) {
             authMap.put(qiniuOssAuth.getAccessKey(), qiniuOssAuth);
         }
     }
 
-    public QiniuOssAuth choosAliOssAuth(String wxAppId) {
+    public QiniuOssAuth choosQiniuOssAuth(String wxAppId) {
         return authMap.get(wxAppId);
     }
 
-    public void addAliOssAuth(QiniuOssAuth qiniuOssAuth) {
+    public void addQiniuOssAuth(QiniuOssAuth qiniuOssAuth) {
         authMap.put(qiniuOssAuth.getAccessKey(), qiniuOssAuth);
     }
 
-    public void removeAliOssAuth(String wxAppId) {
+    public void removeQiniuOssAuth(String wxAppId) {
         authMap.remove(wxAppId);
     }
 
-    public List<QiniuOssAuth> getAliOssAuthList() {
+    public List<QiniuOssAuth> getQiniuOssAuthList() {
         return new ArrayList<>(authMap.values());
     }
 
-    public abstract List<QiniuOssAuth> initAliOssAuthList();
+    public abstract List<QiniuOssAuth> initQiniuOssAuthList();
 }
