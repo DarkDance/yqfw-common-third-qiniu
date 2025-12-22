@@ -6,8 +6,8 @@ import cn.jzyunqi.common.third.qiniu.oss.model.QiniuOssToken;
 import cn.jzyunqi.common.utils.CollectionUtilPlus;
 import cn.jzyunqi.common.utils.DigestUtilPlus;
 import cn.jzyunqi.common.utils.StringUtilPlus;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.Resource;
+import tools.jackson.databind.ObjectMapper;
 
 import java.util.HashMap;
 import java.util.Map;
